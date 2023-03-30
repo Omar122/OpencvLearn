@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-compile exec</actionName>
+            <displayName>compile exec</displayName>
+            <goals>
+                <goal>org.apache.maven.plugins:maven-compiler-plugin:3.1:compile</goal>
+                <goal>exec:exec</goal>
+            </goals>
+            <properties>
+                <javacpp.platform>Windows-x86_64</javacpp.platform>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-C E</actionName>
+            <displayName>C E</displayName>
+            <goals>
+                <goal>compile</goal>
+                <goal>exec:java</goal>
+            </goals>
+            <properties>
+                <javacpp.platform>windows-x86_64</javacpp.platform>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-CES</actionName>
+            <displayName>CES</displayName>
+            <goals>
+                <goal>compile</goal>
+                <goal>exec:java</goal>
+            </goals>
+            <properties>
+                <javacpp.platform>windows-x86_64</javacpp.platform>
+            </properties>
+        </action>
+    </actions>

@@ -29,7 +29,7 @@ public class OpencvLearn {
         Pointer pointer = new Pointer();
         BytePointer name = new BytePointer("window1");
 
-        Mat img = imread("C:\\Users\\carbo\\Documents\\NetBeansProjects\\OpencvLearn\\src\\main\\java\\com\\mycompany\\opencvlearn\\chart.png");
+        Mat img = imread("C:\\Users\\carbo\\Documents\\NetBeansProjects\\OpencvLearn\\src\\main\\java\\com\\mycompany\\opencvlearn\\2022-12-07 (5).png");
         Mat gray = new Mat();
         Mat blured = new Mat();
         medianBlur(img, blured, 3);
@@ -58,9 +58,9 @@ public class OpencvLearn {
 
             }
             Mat finaloutput = new Mat();
-            //cvtColor(output, finaloutput, opencv_imgproc.COLOR_GRAY2RGBA);
+           cvtColor(output, finaloutput, opencv_imgproc.COLOR_GRAY2RGBA);
             imwrite("output.jpg", output);
-            //imwrite("finaloutput.jpg", finaloutput);
+            imwrite("finaloutput.jpg", finaloutput);
           
         }
 
